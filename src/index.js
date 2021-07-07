@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDom from 'react-dom';
+import React from "react";
+import ReactDom from "react-dom";
 import "./index.css";
+import App from "./App";
 
-const Index = () =>{
-    return <div className = "container">Hello webpack !</div>;
-};
-
-ReactDom.render(<Index/>,document.getElementById("index"));
+ReactDom.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
